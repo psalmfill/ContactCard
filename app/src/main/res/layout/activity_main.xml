@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.samfield.sgctmedia.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Samfield Global Communication Technology"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="#2766b6"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/whatwedo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What we do!"
+            android:padding="4dp"
+            android:textColor="#ffffff"
+            android:background="#2766b6"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/webdev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Development"
+            android:layout_margin="8dp"
+            android:layout_below="@id/whatwedo"/>
+        <TextView
+            android:id="@+id/webdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Design"
+            android:layout_margin="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/whatwedo"/>
+        <TextView
+            android:id="@+id/graphics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graphics Design"
+            android:layout_margin="8dp"
+            android:layout_below="@id/webdev"/>
+        <TextView
+            android:id="@+id/webmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Website Maintenance"
+            android:layout_margin="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/webdev"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Management"
+            android:layout_margin="8dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/graphics"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Training"
+            android:layout_margin="8dp"
+            android:layout_below="@id/graphics"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect With Us"
+        android:gravity="center"
+        android:background="#2766b6"
+        android:textColor="#ffffff"
+        android:padding="8dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/locationimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/location"/>
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" #2 Oron Road, Uyo, Akwa-Ibom State,Nigeria."
+            android:layout_toRightOf="@id/locationimg"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/fblogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_below="@id/locationimg"
+            android:src="@drawable/facebook"/>
+        <TextView
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="facebook.com/SGCT"
+            android:layout_below="@id/location"
+            android:layout_toRightOf="@id/fblogo"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/twlogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:layout_below="@id/fblogo"
+            android:src="@drawable/twitter"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SGTC"
+            android:layout_toRightOf="@id/twlogo"
+            android:layout_below="@id/fblogo"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/whatlogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/twlogo"
+            android:layout_margin="3dp"
+            android:src="@drawable/whatsapp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+2348188631121"
+            android:layout_toRightOf="@id/whatlogo"
+            android:layout_below="@id/twlogo"
+            android:layout_margin="8dp"/>
+        <ImageView
+            android:id="@+id/gmaillogo"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/whatlogo"
+            android:src="@drawable/gmail"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sgct@gmail.com"
+            android:layout_toRightOf="@id/whatlogo"
+            android:layout_below="@id/whatlogo"
+            android:layout_margin="8dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
